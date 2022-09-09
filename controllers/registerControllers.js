@@ -11,7 +11,7 @@ registerValidation: (req, res) => {
 
     const errors = validationResult(req);
      if(errors.isEmpty()){
-       return res.send("Registro correcto")
+       return res.send("Registro exitoso")
     }else{
         return res.render('register',{
            errors : errors.mapped(),
