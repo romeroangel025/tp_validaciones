@@ -99,15 +99,15 @@
       <h2>Inicia Sesion</h2>
       <form class="form__label" action="" method="POST">
         <label for="name">Nombre:</label>
-        <input type="text" name="name" placeholder="Ej:juanito" id="name"value="<%= locals.old && old.first_name ? old.name : null %>" >
+        <input type="text" name="name" id="name"value="<%= locals.old && old.name ? old.name : null %>" >
         <p><%= locals.errors && errors.name ? errors.name.msg : null%></p>
 
         <label for="surname">Apellido:</label>
-        <input type="text" name="surname" placeholder="Ej:Perez" id="surname" value="<%= locals.old && old.surname ? old.surname : null %>" >
+        <input type="text" name="surname" id="surname" value="<%= locals.old && old.surname ? old.surname : null %>" >
         <p><%= locals.errors && errors.surname ? errors.surname.msg : null%></p>
 
         <label for="email">Email:</label>
-        <input type="email" name="email" placeholder="Ej:juanitoPerez@hotmail.com" id="email"value="<%= locals.old && old.email ? old.first_name : null %>" >
+        <input type="email" name="email" placeholder="Ej:juanitoPerez@hotmail.com" id="email"value="<%= locals.old && old.email ? old.email : null %>" >
         <p> <%= locals.errors && errors.email ? errors.email.msg : null%></p>
 
 
